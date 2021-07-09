@@ -1,0 +1,26 @@
+{
+    "name": "realifetech/aws-extension",
+    "description": "An extension of common AWS functionality",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tom",
+            "email": "tom.rutherford@realifetech.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "aws/aws-sdk-php": "^3.185",
+        "ext-fileinfo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwsExtension\\": "src/"
+        }
+    }
+}
