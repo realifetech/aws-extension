@@ -2,13 +2,12 @@
 
 namespace AwsExtension\S3;
 
-use Aws\S3\S3Client;
 use AwsExtension\S3\Exception\ImageDownloadException;
 use AwsExtension\S3\Exception\S3ImageUploadException;
 use finfo;
 use JetBrains\PhpStorm\ArrayShape;
 
-class ImageService extends S3Client
+class S3Client extends \Aws\S3\S3Client
 {
     public function __construct(
         array $args,
